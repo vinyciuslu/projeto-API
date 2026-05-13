@@ -1,4 +1,4 @@
-// DECLARAÇÕES DOS ELEMENTOS USANDO DOM
+	// DECLARAÇÕES DOS ELEMENTOS USANDO DOM
 const videoElemento = document.getElementById("video");
 const botaoScanear= document.getElementById("btn-texto");
 const resultado = document.getElementById("resultado");
@@ -53,7 +53,7 @@ botaoScanear.onclick = async ()=>{
         );
         // Remove espaços excessivos e caracteres especiais 
         const textoFinal = text.trim();
-        resultado.innerText = textoFinal.length > 0 ? textoFinal : "Não foi possivel identificar o textp";
+        resultado.innerText = textoFinal.length > 0 ? textoFinal : "Não foi possivel identificar o texto";
 
     }catch(erro){
         console.error(erro);
